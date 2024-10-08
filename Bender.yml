@@ -1,0 +1,22 @@
+package:
+  name: ariane-soc
+  authors:
+    - "Luca Valente"
+
+dependencies:
+  common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.30.0 }
+  apb: { git: "https://github.com/pulp-platform/apb.git", version: 0.2.1 }
+  register_interface: { git: "git@github.com:AlSaqr-platform/register_interface.git",   version:  0.3.2 }
+
+export_include_dirs:
+  - include/
+
+sources:
+  - include/mem_map.sv
+  - src/apbdma_cfg_regs.sv
+  - src/downsizer.sv
+  - src/upsizer.sv
+  - src/midend.sv
+  - src/frontend.sv
+  - src/backend.sv
+  - src/apb_dma.sv
